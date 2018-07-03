@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h2>基礎程式設計</h2>
+				<h3>portfolio</h3>
+				<h4>2018.07.02</h4>
+                <h4>台北 蘇同學</h4>
+				</section>
+
+				<section>
+				<canvas width=800 height=300 id="myCanvas"></canvas>
+					<script>
+						var canvas = document.getElementById("myCanvas");
+						var ctx =canvas.getContext("2d");
+						ctx.font = "166px BiauKai,'標楷體','Comic Sans MS'";
+						ctx.fillStyle = "white";
+						ctx.strokeStyle = "white";
+						ctx.textalign = "center";
+						ctx.strokeText ("紺青", canvas.width/2,canvas.height/1.5);
+					</script>
+					<ul>
+						<li>打桌球</li>
+						<li>看動漫</li>
+						<li>去日本旅遊</li>
+					</ul>
+
+				</section>
+				<style>
+					   canvas {
+					   	background-color: rgb(17,50,133);
+					   	color: rgb(252,250,242);
+					   }
+				</style>
+
+
+				<section>Slide 3</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
