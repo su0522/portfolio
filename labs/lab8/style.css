@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+h1.center
+{
+	text-align: center;
+}
+	
+
+	#a {text-align: center;
+		border: 1px solid red;
+        padding:30px;
+		 
+
+	}
+	#b {text-align: center;
+		border: 1px solid red;
+	    width:70%;
+	    margin: 0 auto;
+	    padding:30px;
+	    height: 100px;
+	    font-size: 24px;
+	    font-family:'cwTeXFangSong',serif;
+	    overflow: auto;
+
+	}
+    
+    img.black{
+    	float: right;
+    	width: 240
+    	height 240
+
+    	
+
+
+
+
+
+
+    }
+
+
+
+
+
+		</body>
+</html>
