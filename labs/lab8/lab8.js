@@ -2,12 +2,14 @@
  function start()
  {
  	counter ++;
- 	document.getElementById('seal').src = "./gold.png";
- 	document.getElementById('seal').src = "./black.png";
+ 	if(counter%2==0) {
+ 	document.getElementById('seal').src = "./labs/lab8/black.png";}
+ 	else{
+ 	document.getElementById('seal').src = "./labs/lab8/gold.png";}
  }
 
 setInterval(start,1000)
-window.addEventListenenr("load",start,false);
+window.addEventListener("load",start,false);
 
 
 
